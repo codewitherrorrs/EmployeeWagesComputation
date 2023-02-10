@@ -7,7 +7,7 @@ namespace EmployeeWagesComputationProblem
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To Employee Wage Computation Program");
-            CalculateDailyWage.calculateDailywage();    
+            PartTime.partTime();
         }
     }
 
