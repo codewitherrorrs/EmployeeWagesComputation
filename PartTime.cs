@@ -8,27 +8,29 @@ namespace EmployeeWagesComputation
 {
     public class PartTime
     {
+        public const int isFullTime = 1;
+        public const int empRatePerHrs = 20;
+        public const int isPartTime = 2;
         public static void partTime()
         {
-            int isFullTime = 1;
-            int empRatePerHrs = 20;
-            int isPartTime = 2;
+          
             int empHrs = 0;
             int empWage = 0;
             Random random = new Random();
             int empCheck = random.Next(3);
 
-            if (empCheck == isFullTime)
+            switch (empCheck)
             {
-                empHrs = 8;
-            }
-            else if (empCheck == isPartTime)
-            {
-                empHrs = 4;
-            }
-            else
-            {
-                empHrs = 0;
+                case isFullTime:
+                    empHrs = 8;
+                    break;
+                case isPartTime:
+                    empHrs = 4;
+                    break;
+                default:
+                    empHrs = 0; 
+                    break;
+
             }
 
             empWage = empHrs * empRatePerHrs;
