@@ -1,4 +1,4 @@
-﻿using EmployeeWagesComputation;
+﻿using EmployeeWageComputation;
 
 namespace EmployeeWagesComputationProblem
 {
